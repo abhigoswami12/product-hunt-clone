@@ -1,0 +1,397 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mukta", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+/* used multiple times */
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background: white;
+  /* line-height: 57px; */
+  padding: 1rem 0;
+  border-bottom: 2px solid rgb(218, 215, 215);
+}
+.logo img,
+.profile-img img {
+  width: 40px;
+}
+.nav-item {
+  margin-left: 1.3rem;
+}
+.nav-item:first-child {
+  margin-left: 3rem;
+}
+.nav-item a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(94, 94, 94);
+  /* text-transform: uppercase; */
+}
+.search {
+  margin-left: 1.3rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  outline: 0;
+  border: 1px solid rgb(207, 206, 206);
+  border-radius: 2px;
+}
+.header-col1-1 {
+  width: 11%;
+}
+.header-col1-2 {
+  width: 63%;
+}
+.header-col1-3 {
+  /* width: 25%; */
+}
+
+/* product-section */
+.products-head {
+  padding-bottom: 1rem;
+}
+.day-schedule {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.filter a {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+.filter a:hover {
+  text-decoration: underline;
+  color: #cd5129;
+}
+.product-img img {
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50%; */
+}
+.product-section {
+  /* font-family: "Mukta", sans-serif; */
+  background: #f3f3f3;
+  padding: 3.5rem 0;
+}
+.product-details {
+  padding-left: 1rem;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.sub-title {
+  padding: 0.6rem 0;
+  font-size: 0.92rem;
+  color: rgb(112, 112, 112);
+}
+.col {
+  /* width: 32%; */
+}
+.single-product {
+  /* font-family: "Mukta", sans-serif; */
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding: 2rem 2rem;
+  background: white;
+}
+.single-product:hover {
+  background: #f3f3f3;
+  cursor: pointer;
+}
+.single-product:hover .upvote-col {
+  background: white;
+}
+.single-product:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.single-product:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.products-list {
+  width: 68%;
+  margin-right: 2rem;
+}
+.all-products {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.11);
+}
+.upvote-col {
+  border: 1px solid rgb(214, 214, 214);
+  padding: 0.9rem 1.2rem;
+  border-radius: 3px;
+}
+.upvote-count {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.upvote-col:hover {
+  background: #f1f1f1 !important;
+  cursor: pointer;
+}
+
+/* side bar */
+.side-bar {
+  width: 30%;
+}
+
+/* upcoming product list */
+.upcoming-products-caption {
+  padding-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.upcoming-products-sub-caption {
+  padding-bottom: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(114, 113, 113);
+}
+.upcoming-products-list {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.11);
+  background: white;
+  border-radius: 6px;
+}
+
+.upcoming-single-product {
+  border-bottom: 1px solid rgb(214, 214, 214);
+  margin: 0 2rem;
+  padding: 2rem 0;
+}
+.upcoming-single-product:hover {
+  margin: 0;
+  padding: 2rem 2rem;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+.upcoming-single-product:last-child {
+  /* border-bottom: none; */
+  /* border-bottom-left-radius: 6px; */
+  /* border-bottom-right-radius: 6px; */
+}
+/* .upcoming-single-product:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+} */
+.upcoming-product-img img {
+  width: 45px;
+  height: 45px;
+}
+.upcoming-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.upcoming-sub-title {
+  padding: 0.6rem 0;
+  font-size: 0.92rem;
+  color: rgb(112, 112, 112);
+}
+.upcoming-follow {
+  color: rgb(107, 107, 107);
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 0.3rem;
+}
+.upcoming-follower-number {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.sidebar-btn {
+  text-align: center;
+  padding: 1.2rem 0;
+  margin: 0 2rem;
+}
+.view-btn {
+  width: 100%;
+  padding: 0.4rem 0;
+  /* font-size: 1rem; */
+  color: #cd5129;
+  font-weight: 600;
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.view-btn:hover {
+  background: rgb(231, 231, 231);
+}
