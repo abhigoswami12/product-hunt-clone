@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import ProductsList from "./components/ProductsList";
 import UpcomingProducts from "./components/UpcomingProducts";
+import Hiring from "./components/Hiring";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           </div>
           <div className="side-bar">
             <UpcomingProducts />
+            <Hiring />
           </div>
         </div>
       </section>

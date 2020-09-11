@@ -13,28 +13,25 @@ function UpcomingProducts() {
       <div className="upcoming-products-list">
         {[
           {
-            img: "images/article-images/dummy.png",
-            title: "Heading1",
-            "sub-title": "Details",
-            follow: 651
+            img:
+              "https://ph-files.imgix.net/fec0afe1-7f97-4f1b-96e1-9654ed16f644?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop&bm=normal&bf=max&bh=20&bw=20",
+            title: "nuffsaid",
+            "sub-title": "A smart space for your work apps",
+            follow: 1121
           },
           {
-            img: "images/article-images/dummy.png",
-            title: "Heading2",
-            "sub-title": "Details",
-            follow: 655
+            img:
+              "https://ph-files.imgix.net/80444cb9-ab0a-4d62-9e52-03e2f2d9c50a?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop&bm=normal&bf=max&bh=20&bw=20",
+            title: "AskDesis",
+            "sub-title": "The neighbourhood app",
+            follow: 862
           },
           {
-            img: "images/article-images/dummy.png",
-            title: "Heading2",
-            "sub-title": "Details",
-            follow: 655
-          },
-          {
-            img: "images/article-images/dummy.png",
-            title: "Heading2",
-            "sub-title": "Details",
-            follow: 655
+            img:
+              "https://ph-files.imgix.net/b4066b87-83ef-4b13-b9be-a24c613adc24.gif?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=40&h=40&fit=crop&bm=normal&bf=max&bh=20&bw=20",
+            title: "MENTOR CLUB",
+            "sub-title": "Weekly calls with mentors to help boost your career",
+            follow: 146
           }
         ].map((product, index) => (
           <UpcomingSingleProduct key={index} product={product} />

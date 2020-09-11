@@ -1,6 +1,8 @@
 import React from "react";
 import SingleProduct from "./SingleProduct";
 
+import { ProductsData } from "../Data";
+
 function ProductsList() {
   return (
     <>
@@ -14,63 +16,7 @@ function ProductsList() {
         </div>
       </div>
       <div className="all-products">
-        {[
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          },
-          {
-            img: "/images/article-images/dummy.png",
-            title: "Relativity2",
-            "sub-title": "Lorem ipsum dolor sit amet consectetur adipisicing"
-          }
-        ].map((product, index) => (
+        {ProductsData.map((product, index) => (
           <SingleProduct key={index} product={product} />
         ))}
       </div>

@@ -209,13 +209,13 @@ body {
   border-radius: 2px;
 }
 .header-col1-1 {
-  width: 11%;
+  width: 6%;
 }
 .header-col1-2 {
-  width: 63%;
+  width: 45%;
 }
 .header-col1-3 {
-  /* width: 25%; */
+  width: 35%;
 }
 
 /* product-section */
@@ -340,15 +340,7 @@ body {
   background: #f1f1f1;
   cursor: pointer;
 }
-.upcoming-single-product:last-child {
-  /* border-bottom: none; */
-  /* border-bottom-left-radius: 6px; */
-  /* border-bottom-right-radius: 6px; */
-}
-/* .upcoming-single-product:first-child {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-} */
+
 .upcoming-product-img img {
   width: 45px;
   height: 45px;
@@ -394,4 +386,27 @@ body {
 }
 .view-btn:hover {
   background: rgb(231, 231, 231);
+}
+
+/* hiring */
+.hiring-caption {
+  padding-top: 4rem;
+}
+.single-hiring.upcoming-single-product {
+  border-bottom: none;
+  padding-bottom: 1rem;
+}
+.post-hiring {
+  margin: 1rem 0;
+  text-align: left;
+  font-weight: 700;
+  color: rgb(134, 134, 134);
+}
+.post-job-link {
+  text-decoration: none;
+  color: #cd5129;
+  font-size: 0.9rem;
+}
+.post-job-link:hover {
+  text-decoration: underline;
 }
