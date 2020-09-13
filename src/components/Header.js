@@ -1,4 +1,6 @@
 import React from "react";
+import { BsThreeDots } from "react-icons/bs";
+import Modal from "./Modal";
 
 function Header() {
   return (
@@ -37,17 +39,31 @@ function Header() {
               <li className="nav-item">
                 <a href="#">Mentors</a>
               </li>
+              <li className="nav-item">
+                <a href="#">
+                  <BsThreeDots />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div>
           <ul className="flex-between">
             <li className="nav-item">
-              <a href="#">Post</a>
+              <a
+                href="#"
+                onClick={event => {
+                  {
+                    console.log(event.target);
+                  }
+                }}
+              >
+                Post
+              </a>
             </li>
             <li className="nav-item">
               <a href="#">
-                <i title="notification" class="fas fa-bell"></i>
+                <i title="notification" className="fas fa-bell"></i>
               </a>
             </li>
             <li className="nav-item">

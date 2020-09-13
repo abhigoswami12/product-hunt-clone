@@ -180,7 +180,7 @@ body {
 .header {
   background: white;
   /* line-height: 57px; */
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   border-bottom: 2px solid rgb(218, 215, 215);
 }
 .logo img,
@@ -220,6 +220,7 @@ body {
 
 /* product-section */
 .products-head {
+  margin-top: 3rem;
   padding-bottom: 1rem;
 }
 .day-schedule {
@@ -246,7 +247,7 @@ body {
 .product-section {
   /* font-family: "Mukta", sans-serif; */
   background: #f3f3f3;
-  padding: 3.5rem 0;
+  /* padding: 3.5rem 0; */
 }
 .product-details {
   padding-left: 1rem;
@@ -287,7 +288,7 @@ body {
 }
 .products-list {
   width: 68%;
-  margin-right: 2rem;
+  margin-right: 1.2rem;
 }
 .all-products {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.11);
@@ -313,6 +314,7 @@ body {
 
 /* upcoming product list */
 .upcoming-products-caption {
+  padding-top: 3rem;
   padding-bottom: 1.3rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -332,11 +334,11 @@ body {
 .upcoming-single-product {
   border-bottom: 1px solid rgb(214, 214, 214);
   margin: 0 2rem;
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 }
 .upcoming-single-product:hover {
   margin: 0;
-  padding: 2rem 2rem;
+  padding: 1.2rem 2rem;
   background: #f1f1f1;
   cursor: pointer;
 }
@@ -345,12 +347,16 @@ body {
   width: 45px;
   height: 45px;
 }
+.upcoming-product-content {
+  padding-right: 2rem;
+  line-height: 1.5;
+}
 .upcoming-title {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .upcoming-sub-title {
-  padding: 0.6rem 0;
+  padding: 0.2rem 0;
   font-size: 0.92rem;
   color: rgb(112, 112, 112);
 }
@@ -409,4 +415,92 @@ body {
 }
 .post-job-link:hover {
   text-decoration: underline;
+}
+
+/* discussion */
+.discussion-img img {
+  border-radius: 50%;
+}
+
+.discussion-link {
+  color: #cd5129;
+  text-decoration: none;
+}
+
+.discussion-link:hover {
+  text-decoration: underline;
+}
+
+/* modal */
+
+.modal-outer-bg {
+  position: fixed;
+  /* display: flex; */
+  background: rgb(202, 201, 201);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* z-index: 2; */
+}
+.modal-button {
+  position: relative;
+  z-index: 200;
+}
+.modal-card-container {
+  max-width: 600px;
+  height: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background: white;
+  /* position: absolute; */
+  /* z-index: 3; */
+}
+
+.modal-inp {
+  width: 350px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 0.9rem;
+}
+.modal-legend {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #cd5129;
+  font-weight: 600;
+}
+.modal-img-url {
+  width: 350px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+}
+.modal-title {
+  display: block;
+  margin: 1rem 0;
+  width: 350px;
+}
+.modal-sub-title {
+  display: block;
+  margin: 1rem 0;
+  width: 350px;
+}
+.modal-inp-btn {
+  display: block;
+  width: 50%;
+  padding: 0.4rem 0;
+  /* font-size: 1rem; */
+  color: white;
+  font-weight: 600;
+  background: #cd5129;
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 3px;
+  cursor: pointer;
 }

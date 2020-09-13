@@ -1,7 +1,6 @@
 import React from "react";
 
 function SingleProduct(props) {
-  console.log(props);
   return (
     <article className="single-product">
       <div className="flex-between">
@@ -15,7 +14,7 @@ function SingleProduct(props) {
           </div>
         </div>
         <div className="flex-column upvote-col">
-          <i class="fas fa-caret-up"></i>
+          <i className="fas fa-caret-up"></i>
           <p className="upvote-count">88</p>
         </div>
       </div>
