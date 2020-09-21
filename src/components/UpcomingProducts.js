@@ -37,7 +37,7 @@ function UpcomingProducts() {
           <UpcomingSingleProduct key={index} product={product} />
         ))}
         <div className="sidebar-btn">
-          <a href="#">
+          <a href="##">
             <input
               className="view-btn"
               type="submit"

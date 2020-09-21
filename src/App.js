@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import ProductsList from "./components/ProductsList";
 import UpcomingProducts from "./components/UpcomingProducts";
 import Hiring from "./components/Hiring";
-import { todayData, yesterdayData, sundayData } from "./Data";
+// import { todayData, yesterdayData, sundayData } from "./Data";
 import Discussions from "./components/Discussions";
 import Modal from "./components/Modal";
 
@@ -23,11 +23,20 @@ class App extends React.Component {
           <div className="container flex-start">
             <div className="products-list">
               {[
-                { label: "Today", data: todayData },
-                { label: "Yesterday", data: yesterdayData },
-                { label: "Sunday", data: sundayData }
+                {
+                  label: "Today",
+                  url: "https://api.producthunt.com/v1/posts"
+                },
+                {
+                  label: "Yesterday",
+                  url: "https://api.producthunt.com/v1/posts?days_ago=1"
+                },
+                {
+                  label: "September 19th",
+                  url: "https://api.producthunt.com/v1/posts?day=2017-09-19"
+                }
               ].map((single, index) => (
-                <ProductsList label={single.label} data={single.data} />
+                <ProductsList label={single.label} url={single.url} />
               ))}
             </div>
             <div className="side-bar">

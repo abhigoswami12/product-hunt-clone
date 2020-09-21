@@ -38,7 +38,7 @@ function UpcomingProducts() {
           <SingleHiring key={index} product={product} />
         ))}
         <div className="sidebar-btn">
-          <a href="#">
+          <a href="##">
             <input
               className="view-btn"
               type="submit"
@@ -49,7 +49,7 @@ function UpcomingProducts() {
           </a>
           <p className="post-hiring">
             Hiring?{" "}
-            <a className="post-job-link" href="#">
+            <a className="post-job-link" href="##">
               Post a Job
             </a>
           </p>

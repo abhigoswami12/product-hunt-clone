@@ -8,7 +8,7 @@ function Header() {
       <nav className="container flex-between">
         <div className="flex-center">
           <div className="header-col1-1">
-            <a className="logo" href="#">
+            <a className="logo" href="##">
               <img
                 src="/images/article-images/producthunt-svgrepo-com.svg"
                 alt="altcampus"
@@ -25,22 +25,22 @@ function Header() {
           <div className="header-col1-3">
             <ul className="nav-menu flex">
               <li className="nav-item">
-                <a href="#">Deals</a>
+                <a href="##">Deals</a>
               </li>
               <li className="nav-item">
-                <a href="#">Jobs</a>
+                <a href="##">Jobs</a>
               </li>
               <li className="nav-item">
-                <a href="#">Discussion</a>
+                <a href="##">Discussion</a>
               </li>
               <li className="nav-item">
-                <a href="#">ship</a>
+                <a href="##">ship</a>
               </li>
               <li className="nav-item">
-                <a href="#">Mentors</a>
+                <a href="##">Mentors</a>
               </li>
               <li className="nav-item">
-                <a href="#">
+                <a href="##">
                   <BsThreeDots />
                 </a>
               </li>
@@ -51,7 +51,7 @@ function Header() {
           <ul className="flex-between">
             <li className="nav-item">
               <a
-                href="#"
+                href="##"
                 onClick={event => {
                   {
                     console.log(event.target);
@@ -62,12 +62,12 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#">
+              <a href="##">
                 <i title="notification" className="fas fa-bell"></i>
               </a>
             </li>
             <li className="nav-item">
-              <a className="profile-img" href="#">
+              <a className="profile-img" href="##">
                 <img src="/images/article-images/image3.png" alt="altcampus" />
               </a>
             </li>

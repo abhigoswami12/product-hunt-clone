@@ -13,7 +13,7 @@ function Discussions() {
           <SingleDiscussion key={index} product={product} />
         ))}
         <div className="sidebar-btn">
-          <a className="discussion-link" href="#">
+          <a className="discussion-link" href="##">
             View More Discussions
           </a>
         </div>
