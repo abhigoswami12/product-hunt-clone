@@ -40,7 +40,7 @@ class App extends React.Component {
                   this.setState({ showModal: !this.state.showModal })
                 }
               >
-                Show Modal button
+                {this.state.showModal ? "X" : "Show Modal button"}
               </button>
               <Modal showModal={this.state.showModal} />
             </div>

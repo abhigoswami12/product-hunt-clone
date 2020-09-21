@@ -35,14 +35,15 @@ class Modal extends React.Component {
                   placeholder="Enter Sub-title"
                   className="modal-inp modal-sub-title"
                 />
-
-                <input
-                  className="modal-inp-btn"
-                  type="submit"
-                  name=""
-                  id=""
-                  value="add product"
-                />
+                <div className="modal-btn-div">
+                  <input
+                    className="modal-inp-btn"
+                    type="submit"
+                    name=""
+                    id=""
+                    value="add product"
+                  />
+                </div>
               </form>
             </div>
           </div>
